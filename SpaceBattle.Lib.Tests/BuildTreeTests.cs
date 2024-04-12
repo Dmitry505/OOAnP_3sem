@@ -20,7 +20,7 @@ public class BuildTreeTests
     public void BuildCollisionTreeCommand_Positive()
     {
         var reader = new Mock<IArraysFromFileReader>();
-        var path = "../../../Lab_3_TreeTest/CollisionVectors.txt";
+        var path = "../../../data/CollisionVectors.txt";
         var arrays = File.ReadAllLines(path).Select(
             line => line.Split(" ").Select(num => int.Parse(num)).ToArray()
         ).ToList();
